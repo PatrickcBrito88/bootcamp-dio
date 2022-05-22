@@ -1,0 +1,35 @@
+Git init – Inicia o repositório local
+Git status – indica se o respositório local está atualizado com as alterações da pasta
+Git add {nome do arquivo.extensão} – adiciona o arquivo ao repositório local
+Git add . – Adiciona todos os arquivos
+Git commit – m “mensagem” – Comando para comitar arquivo
+Git log – Log dos commits
+Git config –Local – Configurações apenas daquele repositório
+Git config –Global – Configurações da máquina inteira
+Git config –local user.name “Patrick Brito”- colocar o nome no repositório
+Git config –local user.email email@email.com.br – colocar o email no repositório
+Git log –oneline- todos os commits apenas em uma única linha
+Git log -p – Alterações que aconteceram no projeto
+https://devhints.io/ - Site com diversos comandos, inclusive de Git
+Ignorar um arquivo
+Cria um arquivo no projeto chamado .gitignore e coloca o nome de tudo que vc quer que o git ignore
+Git init –bare – significa que aquele repositório só contem as alterações dos arquivos. Não contem uma cópia dos arquivos
+Git remote – Lista todos os repositórios remotos que meu repositório local conhece
+Git remote add {nome que vc quer dar ao servidor} {caminho do servidor remoto}
+Git remote -v (Endereço do local remoto)
+Git push {nome do servidor remoto} {nome da branch}
+Git remote rename origin {nome do novo repositório local}
+Git pull {NOME DO REPOSITÓRIO ONDE FEZ O CLONE} {nome da branch que vai puxar}
+
+
+-- FAZENDO POR MEIO DO SSH --
+usar o gitbash na raiz da máquina (Menu iniciar - GitBash)
+criar as chaves criptogradas - ssh-keygen -t ed25519
+Navegar até a pasta para pegar o conteudo da chave privada cd /c/users/patri/.ssh
+Listar conteudo: ls
+Pegar conteúdo da chave publica e colocar no git: cat {nome da chave pública}
+Perfil no Git, Menu, configuração -> adicionar a chave pública 
+Iniciar o agente do SSH (Dentro da pasta do .ssh) - eval $(ssh-agent -s)
+Entregar chave pro agente: ssh-add {caminho da chave (se tiver dentro da pasta, basta colocar o nome da chave)}
+
+A partir daqui basta pegar o "link" SSH do repositorio e utilizar no gitbash
