@@ -1,2 +1,4 @@
-# bootcamp-dio
-Bootcamp TQI Fullstack Developer - DIO
+# Bootcamp-dio
+Bootcamp realizado pela TQI Fullstack Developer - DIO
+
+{em andamento}
